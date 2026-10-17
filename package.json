@@ -1,0 +1,14 @@
+{
+  "name": "edge-tuning",
+  "version": "0.0.1-alpha",
+  "source": "src/index.js",
+  "main": "dist/edgetuning.min.js",
+  "scripts": {
+    "dev": "npx live-server --port=5501 --no-browser",
+    "build": "npx parcel build --no-cache"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "parcel": "^2.11.0"
+  }
+}

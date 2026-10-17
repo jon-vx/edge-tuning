@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>edge-tuning</title>
+</head>
+<body>
+
+  <h1>edge-tuning</h1>
+
+  <pre id="out">probing...</pre>
+
+  <script src="./dist/edgetuning.min.js"></script>
+
+  <script type="text/javascript">
+
+    window.onload = async () => {
+
+      const result = await EdgeTuning.detect();
+
+      document.getElementById('out').textContent =
+        JSON.stringify(result, null, 2);
+
+    };
+
+  </script>
+
+</body>
+</html>
